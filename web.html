@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI</title>
+    <style>
+        body {
+            background: url("ai.jpg") no-repeat center center fixed ;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: white;
+           overflow-y: scroll;
+           overflow-x: hidden;
+        }
+
+        .content {
+            /* height: 200vh; 
+            padding: 20px;
+            display: inline; */
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three columns per row */
+            gap: 15px; /* Space between images */
+            justify-items: center; /* Center images inside the grid */
+            position: relative;
+            width: 200px; /* Set width for all images */
+            height: 300px; /* Set height for all images */
+           
+        
+        }
+        .content img{
+            
+            cursor: pointer;
+            transition: transform 0.3s ease; /* Smooth transition*/
+            width: 450px; /* Set a fixed width */
+            height: 300px; /* Set a fixed height */
+            object-fit: cover; /* Ensures the image fills the area without distortion */
+            border-radius: 10px; /* Optional: Adds rounded corners */
+        }
+        img:hover{
+            transform: scale(1.1); /* Slightly increase size on hover */;
+        }
+        h{
+            font-family: Times New Roman;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exploring the field of artificial intelligence</h1>
+    <div class="content">
+       
+        <img src="1.jpg" alt="good1">  
+        <img src="2.jpg" alt="good2">  
+        <img src="3.jpg" alt="good3"> 
+    </div>
+        <h1>AI enables machines to perform tasks that typically require human intelligence, such as learning, problem-solving, and decision-making.</h1>
+    <div class="content">
+        <img src="4.jpg" alt="good4">  
+        <img src="5.jpg" alt="good5"> 
+        <img src="9.jpg" alt="good6">
+
+    </div>
+        
+    <h1> AI can recognize patterns, automate repetitive tasks, and improve efficiency in various industries, including healthcare, finance, and security.</h1>
+    <div class="content">
+        <img src="11.jpg" alt="good7">
+        <img src="13.jpg" alt="good8">
+        <img src="14.jpg" alt="good9">
+    </div>
+        
+        
+       
+    </div>
+
+</body>
+</html>
