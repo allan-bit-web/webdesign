@@ -1,0 +1,90 @@
+
+body {
+   font: 15px Arial, sans-serif;
+   margin: 0px;
+   background-image: url("3.rome.jpg");
+   background-position: center;
+   background-size: cover; /* Ensures the entire image covers the screen */
+
+background-repeat: no-repeat; /* Prevents the image from repeating */
+background-attachment: fixed; /* Keeps the image fixed while scrolling */
+}
+
+.header {
+   padding: 10px 20px;
+   background:transparent;
+}
+.header h1 {
+   font-size: 30px;
+   font-family:'Times New Roman', Times, serif;
+   color:#ffffff;
+
+}
+header h1{
+   color:#ff0000;
+}
+header h3{
+   color:green; 
+   font-size: 30px;
+}
+header p{
+   font-size: 30px;
+   color:cyan;
+}
+
+.container {
+   width: 100%;
+  
+}
+.nav, .section {
+    /* float: left;makes them to the left of the container and sit side by side instead of stacking vertically */
+   padding: 20px;
+    min-height: 170px;/* can enable scrolling */
+    box-sizing: border-box;/*Makes sure that padding and border are included in the element’s total width/height.*/
+    
+} 
+
+.section {
+   width: 80%;
+   
+}
+
+.nav ul {
+   list-style-type: none;
+   padding: 0px;
+   display:flex;
+   justify-content: center;
+  
+   
+   
+}
+.nav ul li a {
+   color:#00ff00;
+   padding:10px;
+   font-size: 20px;
+
+}
+.nav ul li a:hover{
+   background-color: yellow;
+   transition:  0.3s ease;     
+
+}
+.icon{
+display:flex;
+margin:0 auto;
+}
+.icon a{
+padding: 20px;
+color:white;
+font-size:2rem;
+
+}
+.icon a:hover{
+background-color:chocolate;
+transition: 0.3s ease;
+}
+.footer{
+background-color: grey;
+font-size: 30px;
+}
+
