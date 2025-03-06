@@ -47,7 +47,8 @@
 
     </style>
 </head>
-<body>
+ <body>
+    
     <h1>Exploring the field of artificial intelligence</h1>
     <div class="content">
        
@@ -57,7 +58,7 @@
     </div>
         <h1>AI enables machines to perform tasks that typically require human intelligence, such as learning, problem-solving, and decision-making.</h1>
     <div class="content">
-        <img src="4.jpg" alt="good4">  
+        <button onclick="myfunction()"><img src="4.jpg" id="click" alt="good4"></button>  
         <img src="5.jpg" alt="good5"> 
         <img src="9.jpg" alt="good6">
 
@@ -67,12 +68,25 @@
     <div class="content">
         <img src="11.jpg" alt="good7">
         <img src="13.jpg" alt="good8">
-        <img src="14.jpg" alt="good9">
+        <img src="14.jpg" alt="good9"> -->
     </div>
         
         
        
     </div>
+    <script>
+        function myfunction(){
+            document.getElementById('click');
+            var x=prompt("does this makes you happy?");
+            if(x==1){
+                alert("happy to hear that");
+            }
+            else{
+                alert("look the others")
+            }
+            
+        }
+    </script>
 
 </body>
 </html>
