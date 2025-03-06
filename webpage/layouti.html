@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>HTML Div Layout</title>
+        <style>
+             body {
+                font: 14px Arial, sans-serif;
+                margin: 0px;
+                background-image: url("3.rome.jpg");
+                background-position: center;
+                background-size: cover; /* Ensures the entire image covers the screen */
+    
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+}
+            
+             .header {
+                padding: 10px 20px;
+                background:transparent;
+            }
+            .header h1 {
+                font-size: 24px;
+    
+            }
+            header h1{
+                color:#ff0000;
+            }
+            header h3{
+                color:black; 
+                font-size: 30px;
+            }
+            header p{
+                font-size: 30px;
+            }
+
+            .container {
+                width: 100%;
+                /* background: #f2f2f2; */
+            }
+            .nav, .section {
+                 /* float: left;makes them to the left of the container and sit side by side instead of stacking vertically */
+                padding: 20px;
+                 min-height: 170px;/* can enable scrolling */
+                 box-sizing: border-box;/*Makes sure that padding and border are included in the element’s total width/height.*/
+            } 
+           
+            .section {
+                width: 80%;
+                
+            }
+            .nav ul {
+                list-style: none;
+                padding: 0;
+                padding: 0px; 
+                display:flex;
+                justify-content: center;
+            }
+            .nav ul li a {
+                color:#00ff00;
+                padding:10px;
+            }
+            /* .clearfix:after {
+            content: ".";
+             display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;  */
+        
+        .footer {
+            background: transparent;
+            text-align: center;
+            padding: 10px;
+        } 
+        .footer a{
+            font:1px;
+        }
+        </style> 
+        
+    
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>HTML Layout Introduction</h1>
+        </div>
+        
+        <div class="wrapper clearfix">
+            <div class="nav">
+                <nav >
+                    <ul>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="achievement.html">Achievements</a></li>
+                        <li><a href="contacts">Contacts</a></li>
+                        <li><a href="exporemore">Expore more</a></li>
+            
+            
+                    </ul>
+                 </nav>
+                
+            </div>
+            <div>
+                <header >
+    
+            <h1>The Great Rome</h1>
+            <h4 id="code"></h4>
+            <h3>Overview</h3>
+            <p>Rome, the capital of Italy, is one of the most historically significant and culturally rich cities in the world.Known as the "Eternal City," it has a history spanning over 2,500 years and was the center of the powerful Roman Empire.<br> Today, Rome is a major global city, famous for its ancient ruins, art, architecture, and cuisine.</p>
+            
+    
+         </header>
+            </div>
+            <div class="section">
+                <h2>Welcome to our site</h2>
+                <p>Here you will learn how to create websites...</p>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                <a href="https://www.facebook.com/groups/visitrome/" target="_blank">
+                    <img src="face.jpg">
+                   
+                  </a>
+                  <a href="https://x.com/Turismoromaweb" target="_blank">
+                    <img src="twitter.jpg" alt="Facebook">
+                  </a>
+                  
+                
+                  
+            </div>
+            <footer>
+                <p>Created by Allan | <span id="date"></span></p>
+            </footer>
+            
+            <script>
+                // JavaScript to insert the current year
+                document.getElementById("date").textContent = new Date().getFullYear();
+                const username=prompt("what is your name");
+                const display=document.getElementById('code');
+                if(username){
+                    display.textContent="hello" +username +"🤣";
+                }
+
+
+            </script>
+
+            
+            
+        </div>
+        
+    </div>
+
+</body>
+</html>
