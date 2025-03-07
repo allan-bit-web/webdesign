@@ -22,9 +22,9 @@
                  </nav>   
             </div>
             <div class="image">
-                <img src="a.jpg" alt="image1">
-                <img src="b.jpg" alt="image2">
-                <img src="c.jpg" alt="image3">
+                <img src="a.jpg" alt="image1" onclick="showAlert('You clicked image A')">
+                <img src="b.jpg" alt="image2" onclick="showAlert('You clicked image B')">
+                <img src="c.jpg" alt="image3" onclick="showAlert('You clicked image C')">
 
             </div>
            <div>
@@ -53,6 +53,10 @@
             </div>
             <script>
                 document.getElementById("date").textContent = new Date().getFullYear();
+                function showAlert(message) {
+            alert(message);
+        }
+
             </script>    
         </div>
         
