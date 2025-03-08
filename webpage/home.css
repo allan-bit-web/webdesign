@@ -5,6 +5,8 @@ body {
    background-image: url("3.rome.jpg");
    background-position: center;
    background-size: cover; /* Ensures the entire image covers the screen */
+   /* background-color: black; */
+
 
 background-repeat: no-repeat; /* Prevents the image from repeating */
 background-attachment: fixed; /* Keeps the image fixed while scrolling */
@@ -33,6 +35,8 @@ overflow-x: hidden;
             height: 200px; /* Set fixed height */
             object-fit: cover;
             transition: transform 0.3s ease-in-out;
+            box-shadow: #ffffff;
+            border-radius: 10px;
 
    
 }
@@ -83,11 +87,15 @@ header p{
    color:#00ff00;
    padding:10px;
    font-size: 20px;
+   border-radius: 10px;
+   text-decoration: none;
 
 }
 .nav ul li a:hover{
-   background-color: yellow;
-   transition:  0.3s ease;     
+   background-color:rgba(7, 119, 223, 0.267);   
+   transition:  0.3s ease;  
+   box-shadow:0 0 15px #17edf5 ;
+   color: #17edf5 ; 
 
 }
 .icon{

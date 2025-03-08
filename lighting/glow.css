@@ -1,0 +1,41 @@
+/* Basic Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #222;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+/* Glow Effect on Hover */
+.navbar ul li a:hover {
+    color: #0ff;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #0ff;
+    box-shadow: 0 0 15px #0ff; 
+    background-color: rgba(0, 255, 255, 0.1);
+}

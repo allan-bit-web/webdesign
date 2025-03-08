@@ -38,46 +38,44 @@
             <li>Fortifications - Built walls like Hadrian's Wall.</li>
         </ul>
         
-        <h2>Language and Writing</h2>
-        <ul>
-            <li>Latin - Foundation of Romance languages.</li>
-            <li>Roman Alphabet - Basis of modern Western writing.</li>
-        </ul>
         
-        <h2>Art and Culture</h2>
+        
+        <button onclick="coder()">hide</button>
+        <div class="hide">
+           
+            <h2>Art and Culture</h2>
         <ul>
             <li>Mosaics and Frescoes - Beautiful artwork depicting Roman life.</li>
             <li>Literature - Works of Virgil, Cicero, and others.</li>
             <li>Theaters and Entertainment - Gladiator games and dramas.</li>
         </ul>
-        
-        <h2>Science and Medicine</h2>
+        </div>
+        <div class="hide">
+            <h2>Language and Writing</h2>
         <ul>
-            <li>Medical Tools - Early versions of surgical tools.</li>
-            <li>Galen’s Medical Discoveries - Advanced knowledge in medicine.</li>
+            <li>Latin - Foundation of Romance languages.</li>
+            <li>Roman Alphabet - Basis of modern Western writing.</li>
         </ul>
+        </div>
         
-        <h2>Economy and Trade</h2>
-        <ul>
-            <li>Extensive Trade Network - Connected Europe, Africa, and Asia.</li>
-            <li>Currency System - Standardized coins used across the empire.</li>
-            <li>Marketplaces - Forums served as commercial centers.</li>
-        </ul>
         
-        <h2>Religion and Mythology</h2>
-        <ul>
-            <li>Polytheistic Beliefs - Worship of gods like Jupiter, Mars, and Venus.</li>
-            <li>Adoption of Christianity - Became the official religion under Constantine.</li>
-            <li>Temples and Rituals - Built grand temples for religious ceremonies.</li>
-        </ul>
-       
-    
+        
+        </div>
+        
         
         <footer>
             <p>&copy; 2025 Rome Achievements | All Rights Reserved</p>
         </footer>
-
     </div>
     <script src="slide.js"></script>
+    <script>
+        function coder(){
+            var x=document.getElementsByClassName("hide");
+            for(var i=0;i<x.length;i++){
+                x[i].style.display="show";
+            }
+
+        }
+    </script>
 </body>
 </html>

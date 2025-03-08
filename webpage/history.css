@@ -3,8 +3,7 @@
                 background-image: url("11.rome.jpg");
                 background-repeat: no-repeat;
                 background-position: center;
-                background-size: cover;
-               
+                background-size: cover;  
             }
             #click{
                 color:black;
@@ -24,11 +23,9 @@
             }
             .two{
                 background-color: #dddddd91;
-
             }
             .three{
                 background-color: #dddddd91;
-
             }
             .four{
                 background-color: #dddddd91;

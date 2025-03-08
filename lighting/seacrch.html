@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Search Page</title>
+    <link rel="spreadsheet" href="search.css">
+</head>
+<body>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" class="search-box" placeholder="Search for images, files, or text..." onkeyup="searchFunction()">
+        <button class="search-button" onclick="searchFunction()">Search</button>
+    </div>
+
+    <!-- Searchable Content -->
+    <div id="contentList" class="content-container">
+        <!-- Images -->
+        <div class="content"><img src="a.jpg" alt="Placeholder Image"> <p>a</p></div>
+        <div class="content"><img src="b.jpg" alt="Red Image"> <p>b</p></div>
+
+        <!-- Files -->
+        <div class="content"><a href="crypto.pdf" class="file-link" target="_blank">crypto</a>
+        </div>
+        <div class="content"><a href="security.pdf" class="file-link" target="_blank">security</a>
+        </div>
+    </div>
+
+    <script src="search.js"></script>
+
+</body>
+</html>
