@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        table#alter tr:nth-child(even) {
+            background-color:#ff0000;
+        }
+
+        table#alter tr:nth-child(odd) {
+            background-color:#E6E6FA;
+        }
+
+        table#alter th {
+            color: white;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+
+<table id="alter">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>score</th>
+    </tr>
+    <tr>
+        <td colspan="3">Sonoo</td>
+    </tr>
+    <tr>
+        <td>James</td>
+        <td>William</td>
+        <td>80</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Swati</td>
+        <td>Sironi</td>
+        <td>82</td>
+    </tr>
+    <tr>
+        <td>Singh</td>
+        <td>72</td>
+    </tr>
+</table>
+
+</body>
+</html>

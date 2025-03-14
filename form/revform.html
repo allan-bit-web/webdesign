@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://localhost:8080/review" method="POST">
+        <h2>Your Details:</h2>
+        Name: <input type="text" name="name" maxlength="5" required /><br>
+        Email: <input type="email" name="email" maxlength="100" required /><br>
+    
+        <h2>Your Review:</h2>
+        <label for="hear-about">How did you hear about us?</label>
+        <select name="hearAbout">
+            <option value="Project">Project</option>
+            <option value="Friend">Friend</option>
+            <option value="Internet">Internet</option>
+            <option value="Other">Other</option>
+        </select><br>
+    
+        <label>Would you visit again?</label><br>
+        <input type="radio" name="rating" value="Yes"> Yes<br>
+        <input type="radio" name="rating" value="No"> No<br>
+        <input type="radio" name="rating" value="Maybe"> Maybe<br>
+    
+        <label for="comments">Comments:</label><br>
+        <textarea name="comments" rows="4" cols="40"></textarea><br>
+    
+        <input type="checkbox" name="subscribe" checked> Sign up for email updates<br>
+    
+        <input type="submit" value="Submit Review">
+    </form>
+    
+</body>
+</html>

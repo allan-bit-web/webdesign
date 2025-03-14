@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>class attirbute with javascript</h2>
+    <p>click the button to hide elements</p>
+    <button onclick="myFunction()">hide elements</button>
+    <h2 class="fruits">mango</h2>
+    <p>mango is the king of all fruits</p>
+    <h2 class="fruits">orange</h2>
+    <p>mango is the king of all fruits</p>
+    <h2 class="fruits">apple</h2>
+    <p>mango is the king of all fruits</p>
+    <script>
+        function myFunction(){
+            var x=document.getElementsByClassName("fruits");
+            for(var i=0;i< x.length;i++){
+                x[i].style.display="none";
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
